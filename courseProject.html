@@ -33,15 +33,193 @@
 
                 <!-- Projects List -->
                 <section class="project-list">
+
+                    <!-- Personal Analytics Dashboard -->
+                    <article class="project-item">
+                        <a href="https://github.com/vmgriest/Personal-Analytics-Dashboard" target="_blank">Personal Analytics Dashboard</a>
+                        <div class="project-content">
+                            <div class="project-description">
+                                <br>
+                                <li>Self-hosted platform tracking screen time, GitHub commits, expenses, and location data in one place.</li>
+                                <li>FastAPI REST API with DuckDB storage, plus CLI capture tool (Click + Rich + httpx).</li>
+                                <li>dbt pipeline (staging → marts) for analytics transformations, scheduled nightly via Apache Airflow.</li>
+                                <li>18 user stories, sprint roadmap, and GitHub Projects board demonstrating PM workflow.</li>
+                                <div class="project-tech">Technologies: Python, FastAPI, DuckDB, dbt, Apache Airflow, Docker, Click</div>
+                            </div>
+                            <div class="project-gallery">
+                                <img src="./images/PersonalAnalyticsDashboard.png" alt="Analytics Dashboard" class="gallery-img">
+                                <img src="./images/PersonalMetrics.png" alt="Metrics" class="gallery-img">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Real-Time Stock Market Analytics Pipeline -->
+                    <article class="project-item">
+                        <a href="https://github.com/vmgriest/Real-Time-Stock-Market-Analytics-Pipeline" target="_blank">Real-Time Stock Market Analytics Pipeline</a>
+                        <div class="project-content">
+                            <div class="project-description">
+                                <br>
+                                <li>C# app ingesting live stock prices from Alpha Vantage API, streaming through Apache Kafka.</li>
+                                <li>Computes 5/20/50-period moving averages using LINQ windowed aggregation in consumer service.</li>
+                                <li>Stores results in PostgreSQL with Dapper, visualizes in auto-provisioned Grafana dashboards.</li>
+                                <li>ASP.NET Core REST API with Swagger, fully containerized with Docker Compose.</li>
+                                <div class="project-tech">Technologies: C# (.NET 10), Apache Kafka, PostgreSQL, Grafana, Docker, ASP.NET Core</div>
+                            </div>
+                            <div class="project-gallery">
+                                <img src="./images/dashboard-preview.png" alt="Grafana Dashboard" class="gallery-img">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- AI Interview Preparer -->
+                    <article class="project-item">
+                        <a href="https://github.com/vmgriest/AI-Interview-Preparer" target="_blank">AI Interview Preparer</a>
+                        <div class="project-content">
+                            <div class="project-description">
+                                <br>
+                                <li>Voice-based interview simulator with AI-powered questions and responses for natural conversation practice.</li>
+                                <li>Features real-time speech input, multiple AI voice options, and audio playback.</li>
+                                <li>Built with Python backend and TypeScript frontend for seamless user experience.</li>
+                                <div class="project-tech">Technologies: Python, TypeScript, AI/LLM, Speech Recognition, Text-to-Speech</div>
+                            </div>
+                            <div class="project-gallery">
+                                <img src="./images/Interview.png" alt="Interview Interface" class="gallery-img">
+                                <img src="./images/Interview1.png" alt="Interview Chat" class="gallery-img">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Resume Editor -->
+                    <article class="project-item">
+                        <a href="https://github.com/vmgriest/Resume-Editor" target="_blank">Resume Editor</a>
+                        <div class="project-content">
+                            <div class="project-description">
+                                <br>
+                                <li>AI-powered resume tailoring tool that generates job-specific resumes directly into Google Docs.</li>
+                                <li>Leverages free Groq API (Llama 3.3 70B) to analyze profile and select most relevant experience, projects, and skills.</li>
+                                <li>--fill-gaps mode covers every job requirement to maximize ATS keyword pass-through.</li>
+                                <li>OAuth integration with Google Docs API for professional formatting (Calibri, borders, hyperlinks).</li>
+                                <div class="project-tech">Technologies: Python, Groq API (Llama 3.3), Google Docs API, OAuth</div>
+                            </div>
+                            <div class="project-gallery">
+                                <img src="./images/ResumeTerminal.png" alt="Terminal" class="gallery-img">
+                                <img src="./images/ResumeJson.png" alt="Json" class="gallery-img">
+                                <img src="./images/ResumeGoogleDoc.png" alt="Generated Resume" class="gallery-img">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- URL Shortener -->
+                    <article class="project-item">
+                        <a href="https://github.com/vmgriest/URL-Shortener" target="_blank">URL Shortener</a>
+                        <div class="project-content">
+                            <div class="project-description">
+                                <br>
+                                <li>Production-grade URL shortener with FastAPI, PostgreSQL, Redis, and full Prometheus/Grafana observability.</li>
+                                <li>Read-through cache strategy: ~5ms redirects at 500 req/s (87.5% faster than DB-only with 95%+ cache hit rate).</li>
+                                <li>Token bucket rate limiting (20 tokens, 10/sec refill) stored in Redis for multi-instance support.</li>
+                                <li>k6 load tests with enforced thresholds (p99 <50ms baseline, <15ms cache-warm).</li>
+                                <div class="project-tech">Technologies: Python, FastAPI, PostgreSQL, Redis, Prometheus, Grafana, Docker, k6</div>
+                            </div>
+                            <div class="project-gallery">
+                                <img src="./images/ShortenAPI.png" alt="URL Shortener API" class="gallery-img">
+                                <img src="./images/URLGrafana.png" alt="Grafana Metrics" class="gallery-img">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- AI Prompt Efficiency Tracker -->
+                    <article class="project-item">
+                        <a href="https://github.com/vmgriest/AI-Prompt-Effiecieny-Tracker" target="_blank">AI Prompt Efficiency Tracker</a>
+                        <div class="project-content">
+                            <div class="project-description">
+                                <br>
+                                <li>Lightweight tool to compare and evaluate prompt and AI model performances across different LLMs.</li>
+                                <li>Supports Ollama models for local LLM testing and A/B comparison of prompt variations.</li>
+                                <li>Logs all results to Google Sheets for easy tracking and analysis over time.</li>
+                                <li>Provides automated improvement tips to help optimize prompts for better scoring.</li>
+                                <li>Built in Python for quick experimentation and prompt engineering workflows.</li>
+                                <div class="project-tech">Technologies: Python, Ollama, Google Sheets API, LLMs</div>
+                            </div>
+                            <div class="project-gallery">
+                                <img src="./images/PromptTrack.png" alt="Prompt Tracker Interface" class="gallery-img">
+                                <img src="./images/PromptTrack1.png" alt="Prompt Tracker Interface" class="gallery-img">
+                                <img src="./images/PromptTrack2.png" alt="Prompt Tracker Interface" class="gallery-img">
+                                <img src="./images/PromptTrack3.png" alt="Prompt Tracker Interface" class="gallery-img">
+                                <img src="./images/PromptGoogleSheet.png" alt="Google Sheets Results Prompt" class="gallery-img">
+                                <img src="./images/ModelGoogleSheet.png" alt="Google Sheets Results Model" class="gallery-img">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- MiniSearch Engine -->
+                    <article class="project-item">
+                        <a href="https://github.com/vmgriest/MiniSearch-Engine" target="_blank">MiniSearch Engine (CSI 4/5810 - Information Retrieval and Knowledge Discovery)</a>
+                        <div class="project-content">
+                            <div class="project-description">
+                                <br>
+                                <li>Lightweight, terminal-based search engine that demonstrates core information retrieval concepts.</li>
+                                <li>Supports boolean queries (AND/OR), phrase search with positional tracking, and TF-IDF ranking.</li>
+                                <li>Features inverted index with persistence (JSON/SQLite), stop word filtering, and color-highlighted results.</li>
+                                <li>100% test pass rate across 49 unit tests covering tokenization, indexing, crawling, query parsing, ranking, and end-to-end search.</li>
+                                <div class="project-tech">Technologies: Python, Standard Library (re, math, json, sqlite3), pytest</div>
+                            </div>
+                            <div class="project-gallery">
+                                <img src="./images/MiniSearch.png" alt="MiniSearch Interface" class="gallery-img">
+                                <img src="./images/MiniSearch1.png" alt="MiniSearch Results" class="gallery-img">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- SpoiledOrNot -->
+                    <article class="project-item">
+                        <a href="https://github.com/vmgriest/SpoiledOrNot" target="_blank">SpoiledOrNot (CSI 4/5130 - Artificial Intelligence)</a>
+                        <div class="project-content">
+                            <div class="project-description">
+                                <br>
+                                <li>AI-powered computer vision that detects produce freshness in real-time using deep learning (PyTorch, ResNet-18).</li>
+                                <li>Achieves 99.75% test accuracy and 0.9999 ROC-AUC across 14 produce classes (fresh vs. rotten).</li>
+                                <li>Enhanced with Gemma 4 multi-modal AI via Ollama for natural language freshness analysis, storage recommendations, and safety assessment.</li>
+                                <li>Real-time inference at 15-30 FPS with webcam/IP camera support and Flask web interface.</li>
+                                <div class="project-tech">Technologies: Python, PyTorch, Flask, ResNet-18, Ollama, Gemma 4, OpenCV</div>
+                            </div>
+                            <div class="project-gallery">
+                                <img src="./images/Spoiled_App.png" alt="SpoiledOrNot App" class="gallery-img">
+                                <img src="./images/Spoiled_Terminal.png" alt="SpoiledOrNot Terminal" class="gallery-img">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Quizoodle -->
+                    <article class="project-item">
+                        <a href="https://github.com/vmgriest/Quizoodle" target="_blank">Quizoodle (CSI 4999 Senior Capstone Project)</a>
+                        <div class="project-content">
+                            <div class="project-description">
+                                <br>
+                                <li>Multi-role academic platform for course management, collaborative study sets, and integrated messaging.</li>
+                                <li>Dual portals for Course Managers (instructors) and Learners (students) with separate dashboards and workflows.</li>
+                                <li>Personal calendar system for tracking assignments across multiple courses, plus collaborative study set creation and rating.</li>
+                                <li>Built-in messaging for course discussions and direct communication between users.</li>
+                                <li>253+ commits demonstrating full-stack development and sustained project maintenance.</li>
+                                <div class="project-tech">Technologies: Python, Flask, HTML/CSS/JavaScript, SQL (MySQL)</div>
+                            </div>
+                            <div class="project-gallery">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Vl2eDLXw4yY" title="Quizoodle Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </article>
+
                     <!-- Credit Risk Prediction -->
                     <article class="project-item">
                         <a href="https://github.com/vmgriest/Credit-Risk-Prediction-System" target="_blank">Credit Risk Prediction System (CSI 4/5810 - Information Retrieval and Knowledge Discovery)</a>
                         <div class="project-content">
                             <div class="project-description">
                                 <br>
-                                <li>Built a web app that compares classification models when determining which credit record is high or low risk.</li>
-                                <li>Implemented LDA, Logistic Regression, Naive Bayes, k-NN (k=5) algorithms</li>
-                                <div class="project-tech">Technologies: Python, Flask, HTML, Machine Learning</div>
+                                <li>Web application that compares multiple machine learning models to classify credit records as high risk or low risk.</li>
+                                <li>Implemented and compares LDA, Logistic Regression, Naive Bayes, and k-NN (k=5) algorithms side-by-side.</li>
+                                <li>Upload CSV credit data for instant classification with performance visualization and model comparison.</li>
+                                <li>Built with Flask backend and scikit-learn for ML model training and evaluation.</li>
+                                <div class="project-tech">Technologies: Python, Flask, scikit-learn, Pandas, JavaScript, HTML/CSS</div>
                             </div>
                             <div class="project-gallery">
                                 <img src="./images/credit.png" alt="Credit Risk Dashboard" class="gallery-img">
@@ -56,9 +234,11 @@
                         <div class="project-content">
                             <div class="project-description">
                                 <br>
-                                <li>Compares classification models when classifying amazon reviews as positive or negative.</li>
-                                <li>Implemented Logistic Regression, Naive Bayes, Random Forest, SVM algorithms</li>
-                                <div class="project-tech">Technologies: Python, Flask, HTML, Natural Language Processing</div>
+                                <li>Web application for sentiment analysis that classifies Amazon product reviews as positive or negative using multiple ML models.</li>
+                                <li>Compares four classification algorithms: Logistic Regression, Naive Bayes, Random Forest, and Support Vector Machine (SVM).</li>
+                                <li>Upload or paste review text for real-time classification with side-by-side model performance comparison.</li>
+                                <li>Includes preprocessed Amazon reviews dataset for training and evaluation.</li>
+                                <div class="project-tech">Technologies: Python, Flask, scikit-learn, Pandas, Natural Language Processing</div>
                             </div>
                             <div class="project-gallery">
                                 <img src="./images/amazon.png" alt="Amazon Reviews Analysis" class="gallery-img">
@@ -69,21 +249,42 @@
 
                     <!-- GrizzPOP -->
                     <article class="project-item">
-                        <a href="https://github.com/vmgriest/Grizz-POP" target="_blank">GrizzPOP Event Organizer Website (CSI 3370 - Software Engineer and Practice)</a>
+                        <a href="https://github.com/vmgriest/Grizz-POP" target="_blank">GrizzPOP Event Organizer Website (CSI 3370 - Software Engineering Practice)</a>
                         <div class="project-content">
                             <div class="project-description">
                                 <br>
-                                <li>Built an event planner website for students at Oakland University.</li>
-                                <li>Users can create, share, and leave reviews on events hosted at OU. Includes setup crew interface for event management.</li>
-                                <div class="project-tech">Technologies: PHP, HTML, CSS, SQL, MySQL</div>
+                                <li>Event organizer website for Oakland University students to create, share, and review campus events.</li>
+                                <li>Includes RSVP system, event pinning, cancel/edit event functionality, and integrated messaging between organizers and attendees.</li>
+                                <li>SetupCrew interface provides dedicated dashboard for event administrators to manage events.</li>
+                                <div class="project-tech">Technologies: PHP, MySQL, HTML, CSS, JavaScript</div>
+                            </div>
+                            <div class="project-gallery">
+                                <img src="./images/events.png" alt="Events Page" class="gallery-img">
+                                <img src="./images/events1.png" alt="Event Details" class="gallery-img">
+                                <img src="./images/setup.png" alt="Setup Interface" class="gallery-img">
                             </div>
                         </div>
-                        <div class="project-gallery">
-                            <img src="./images/events.png" alt="Events Page" class="gallery-img">
-                            <img src="./images/events1.png" alt="Event Details" class="gallery-img">
-                            <img src="./images/setup.png" alt="Setup Interface" class="gallery-img">
+                    </article>
+
+                    <!-- RecipeGenerator -->
+                    <article class="project-item">
+                        <a href="https://github.com/vmgriest/RecipeGenerator" target="_blank">Recipe Generator (GrizzHacks 2024)</a>
+                        <div class="project-content">
+                            <div class="project-description">
+                                <br>
+                                <li>Web application built in 24-hour hackathon that generates recipes based on ingredients you have on hand.</li>
+                                <li>Enter available ingredients and receive matching recipes through a simple web interface.</li>
+                                <li>Includes command-line version for terminal-based recipe generation.</li>
+                                <li>Collaborative project built alongside @benpentecost2004 during GrizzHacks 2024.</li>
+                                <div class="project-tech">Technologies: Python, Flask, HTML, CSS</div>
+                            </div>
+                            <div class="project-gallery">
+                                <img src="./images/Reciepe.png" alt="Recipe Results" class="gallery-img">
+                                <img src="./images/Ingredients.png" alt="Recipe Generator Interface" class="gallery-img">
+                            </div>
                         </div>
                     </article>
+
                 </section>
             </div>
         </main>
@@ -91,7 +292,7 @@
 
         <!-- Footer -->
         <footer id="footer">
-            <p>Last Updated: April 2026</p>
+            <p>Last Updated: April 21st 2026</p>
         </footer>
     </div>
 </body>
